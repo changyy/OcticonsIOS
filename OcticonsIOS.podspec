@@ -13,6 +13,7 @@ Pod::Spec.new do |s|
   s.source_files = 'OcticonsIOS/*.{h,m}'
   s.exclude_files = 'OcticonsIOS/SNTX*.{h,m}', 'OcticonsIOS/main.m'
   s.resources = "OcticonsIOS/octicons.ttf"
+  s.resource_bundle = { 'octicons' => 'OcticonsIOS/octicons.ttf' }
   s.frameworks = 'UIKit', 'Foundation', 'CoreGraphics'
   s.requires_arc = true
 end
